@@ -1,0 +1,58 @@
+GET http://localhost:3003/users
+Content-Type: application/json
+
+###
+
+POST http://localhost:3003/users
+Content-Type: application/json
+
+{
+  "name": "John",
+  "email": "john@gmail.com",
+    "password": "123456"
+}
+
+*/
+
+###
+
+GET http://localhost:3003/products
+Content-Type: application/json
+
+###
+
+POST http://localhost:3003/products
+Content-Type: application/json
+
+{
+    "name": "Camisa Elden Ring",
+    "price": 50,
+    "image_url": "https://mapadamasmorra.com.br/wp-content/uploads/2022/03/323_masc_2.jpg"
+}
+
+###
+
+POST http://localhost:3003/purchases
+Content-Type: application/json
+
+{
+    "user_id": 1,
+    "product_id": 1,
+    "quantity": 2
+}
+
+###
+
+GET http://localhost:3003/purchases/:user_id
+Content-Type: application/json
+
+###
+
+GET http://localhost:3003/productsDesafio
+Content-Type: application/json
+
+###
+
+GET http://localhost:3003/usersDesafio
+Content-Type: application/json
+
